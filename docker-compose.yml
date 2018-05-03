@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  my-teacher:
+    container_name: my-teacher_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - './client:/usr/src/app'
+      - './usr/src/app/node_modules
+    ports:
+      - '4200:4200'
