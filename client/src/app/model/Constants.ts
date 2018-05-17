@@ -1,0 +1,2 @@
+const TOKEN: string = "token";
+

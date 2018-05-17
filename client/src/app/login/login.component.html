@@ -1,0 +1,21 @@
+<div class="container " style="align-content: center" >
+  <h1>Login Form</h1>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      {{diagnostic}}
+      <mat-form-field class="">
+          <input matInput placeholder="Login Id" formControlName="loginId" >          
+        </mat-form-field>
+      
+        <mat-form-field class="">
+            <input matInput placeholder="Login Id" formControlName="password" >                      
+        </mat-form-field>
+      
+      <div class="button-row">
+          <button mat-raised-button color="primary"  (click)="login()">Log In</button>        
+      </div>
+
+    </form>
+
+</div>
+
+
